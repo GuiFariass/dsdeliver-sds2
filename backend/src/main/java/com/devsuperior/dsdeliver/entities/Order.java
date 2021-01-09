@@ -3,6 +3,7 @@ package com.devsuperior.dsdeliver.entities;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -99,6 +100,12 @@ public class Order implements Serializable {
     public void setStatus(OrderStatus status) {
         this.status = status;
     }
+
+
+    public Set<Product> getProducts() {
+        return this.products;
+    }
+
 
     @Override
     public boolean equals(Object o) {
