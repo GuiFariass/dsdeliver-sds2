@@ -58,7 +58,7 @@ function OrderLocation({ onChangeLocation }: Props) {
             <div className="order-location-content">
                 <h3 className="order-location-title">Selecione aonde o pedido deve ser entregue:</h3>
                 <div className="filter-container">
-                    <AsyncSelect placeholder="Digite um endereçõ para entrega..." className="filter" loadOptions={loadOptions} 
+                    <AsyncSelect placeholder="Digite um endereço para entrega..." className="filter" loadOptions={loadOptions} 
                     onChange={value => handleChangeSelect(value as Place)}/>
                 </div>
                 <MapContainer center={address.position} zoom={20} scrollWheelZoom={false} key={address.position.lat}>
